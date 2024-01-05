@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading-bar" class="loading-bar"></div>
+    <main class="po-table" id="table_po">
+        <section class="table-header">
+            <h1>Orders</h1>
+        </section>
+        <section class="table-header">
+            <button id="toggle-filters-btn">Filters</button>
+            <div class="input-group">
+                <input type="search" placeholder="Search...">
+                <img src="img/search-interface-symbol.png" alt="">
+            </div>
+        </section>
+        <section class="all_filters-section">
+            <div class="filter-section" id="filter-section" style="display: none;">
+
+                <!-- Dropdown for Table Headers -->
+                <select id="header-dropdown">
+                    <option value="">Select Header</option>
+                    <option value="poNumber">PO Number</option>
+                    <option value="effectiveShipDate">Effective Ship Date</option>
+                </select>
+
+                <!-- Dropdown for Comparison Operators -->
+                <select id="operator-dropdown">
+                    <option value="">Select Operator</option>
+                    <option value="equalTo">Equal To</option>
+                    <option value="notEqualTo">Not Equal To</option>
+                </select>
+
+                <!-- Dropdown for Value Selection (Dynamic based on first dropdown) -->
+                <select id="value-dropdown">
+                    <option value="">Select Value</option>
+                    <!-- Options will be populated based on the first dropdown selection -->
+                </select>
+            </div>
+        </section>
+        <section class="table-body">
+            <table class="master-table">
+                <thead>
+                    <tr>
+                        <th>PO Number</th>
+                        <th>Effective Ship Date</th>
+                        <th>Effective Delivery Date</th>
+                        <th>Supplier Name</th>
+                        <th>PO Value</th>
+                        <th>Total PO Quantity</th>
+                        <th>Number of SKUs</th>
+                        <th>Ship Method</th>
+                        <th>Ship To State</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</body>
+</html>

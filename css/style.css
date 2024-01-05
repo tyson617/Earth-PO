@@ -1,0 +1,282 @@
+
+
+/* Reset some default margin on body */
+body {
+  margin: 0;
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Body styling with earthy background color */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ece8e5;
+}
+
+/* Table cell transitions */
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+  transition: 0.2s ease-in-out;
+}
+
+/* Hide transition */
+tbody tr.hide td,
+tbody tr.hide td p {
+  padding: 0;
+  font: 0/0 sans-serif;
+  transition: 0.2s ease-in-out 0.5s;
+}
+
+tbody tr.hide td img {
+  width: 0;
+  height: 0;
+}
+
+/* Table styling */
+table, th, td {
+  margin: 10px;
+  padding: 10px;
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+/* Sticky header */
+thead th {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #c1dbb3;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* Alternate row background color */
+tbody tr:nth-child(even) {
+  background-color: #f8f6f3;
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+  background-color: #fff6 !important;
+}
+
+/* Hide animation */
+tbody tr.hide {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+/* Table row transition */
+tbody tr {
+  --delay: 0.1s;
+  transition: 0.5s ease-in-out var(--delay), background-color 0s;
+}
+
+/* Main container styling with earthy tones */
+main.po-table {
+  width: 82vw;
+  height: 90vh;
+  background-color: #f2efe9;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+/* Table header styling with soft green background */
+.table-header {
+  width: 100%;
+  height: 10%;
+  background-color: #c1dbb3;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Input group styling with light blue background */
+.table-header .input-group {
+  width: 35%;
+  height: 100%;
+  background-color: #d7ebf4;
+  padding: 0 0.8rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+/* Input styling */
+.table-header .input-group input {
+  width: 100%;
+  padding: 0 0.5rem 0 0.3rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Input group hover effect */
+.table-header .input-group:hover {
+  width: 45%;
+  background-color: #fff7;
+  box-shadow: 0 0.1rem 0.4rem #0002;
+}
+
+/* Table body styling with off-white background */
+.table-body {
+  width: 95%;
+  max-height: calc(89% - 1.6rem);
+  background-color: #f8f6f3;
+  margin: 0.8rem auto;
+  border-radius: 0.6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+
+/* Scrollbar styling */
+.table-body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.table-body::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+
+/* Show scrollbar thumb on hover */
+.table-body:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1000px) {
+  .table-header .input-group,
+  .filter-group {
+      width: auto; /* Adjust width for smaller screens */
+  }
+
+  .filter-group select {
+      flex-grow: 1; /* Allow dropdowns to grow as needed */
+  }
+}
+
+/* Loading bar styling with deep blue color */
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%; /* Initial width */
+  height: 6px; /* Thickness of the bar */
+  background-color: #0d3c55; /* Deep blue color */
+  transition: width 0.5s ease;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Filters button styling with soft orange color */
+#toggle-filters-btn {
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  background-color: #f0c987;
+}
+
+/* Filters section styling */
+.filter-section {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+/* Dropdown styling with earthy gray color */
+.filter-section select {
+  padding: 5px;
+  font-size: 14px;
+  background-color: #d2d2d2;
+}
+
+/* About Us Page Styles */
+
+/* Header styling */
+header {
+  background-color: #35424a;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #546a76;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #455e69;
+}
+
+/* Main section styling */
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #35424a;
+}
+
+p {
+  line-height: 1.5;
+  color: #4f646d;
+}
+
+ul {
+  color: #4f646d;
+  padding-left: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  nav {
+      text-align: center;
+  }
+
+  nav li {
+      float: none;
+      display: inline-block;
+  }
+}
