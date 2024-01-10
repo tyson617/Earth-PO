@@ -6,8 +6,10 @@ The purpose of this project is to create a webpage that will act as a company's 
 
 ## Domain Model
 
-![Domain Model](img/domain-model.png)
+![Domain Model](domain-model.png)
 
-![Wireframe](img/Earth%20Co%20WireFrame.png)
+## Wireframe
+
+![Wireframe](wireframe.png)
 
 ### Author: Tyson Fernstrom
